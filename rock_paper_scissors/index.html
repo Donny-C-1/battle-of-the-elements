@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>The Elements</title>
+    <meta name="author" content="Donny C" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Rock Paper Scissors game against a computer" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <!--,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-->
+    <!--..dddddddd...................................................................................................cccccc............................-->
+    <!--..dddd.dddd...............................................................................................ccccccccccc..........................-->
+    <!--..dddd..dddd.............................................................................................ccc........ccc........................-->
+    <!--..dddd....dddd.........................................................................................ccc...........ccc.......................-->
+    <!--..dddd.....dddd.......................................................................................ccc......................................-->
+    <!--..dddd.......dddd....................................................................................ccc.......................................-->
+    <!--..dddd........dddd..........ooooooo.......nnn..nnnnnn........nnn..nnnnnn.......yyy......yyy..........ccc.......................................-->
+    <!--..dddd..........dddd......ooooooooooo.....nnnnnnnnnnnnn......nnnnnnnnnnnnn.....yyy......yyy..........ccc.......................................-->
+    <!--..dddd...........dddd....ooo.......ooo....nnnn.......nnn.....nnnn......nnn.....yyy......yyy...........ccc............ccc.......................-->
+    <!--..dddd...........dddd....ooo.......ooo....nnn........nnn.....nnn.......nnn.....yyy......yyy.............ccc........ccc.........................-->
+    <!--..dddddddddddddddddddd....ooooooooooo.....nnn........nnn.....nnn.......nnn......yyy...yyyyy...............ccccccccccc..........................-->
+    <!--..dddddddddddddddddddd......ooooooo.......nnn........nnn.....nnn.......nnn.......yyyyyy.yyy.................cccccc.............................-->
+    <!--........................................................................................yyy....................................................-->
+    <!--........................................................................................yyy....................................................-->
+    <!--........................................................................................yyy....................................................-->
+    <!--,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,-->
+
+    <h1 class="header">Battle of The Elements</h1>
+    <div class="rule_board">
+        <br>
+        <p><span class="w">Water</span> beats <span class="f">Fire</span> | <span class="f">Fire</span> beats <span
+                class="e">Earth</span> | <span class="e">Earth</span> beats <span class="w">Water</span></p>
+    </div>
+    <div class="scoreboard">
+        <br><br>
+        <h2 class="result">Who will win ?</h2>
+        <p class="speech">First to 5 wins</p>
+        <br><br>
+        <div class="choices">
+            <div class="cont">
+                <h2 class="score">Player: <span class="player_score">0</span></h2>
+                <br>
+                <div class="box">
+                    <img id="player_element" src="./images/unknown.jpg" alt="Player_Element" width="100" height="100" />
+                </div>
+            </div>
+            <div>vs</div>
+            <div class="cont">
+                <h2 class="score">Computer: <span class="computer_score">0</span></h2>
+                <br>
+                <div class="box">
+                    <img id="computer_element" src="./images/unknown.jpg" alt="Computer_Element" width="100"
+                        height="100" />
+                </div>
+            </div>
+        </div>
+        <br>
+        <h2>Choose Your Element</h2>
+        <div class="row">
+            <div class="col">
+                <button id="fire"><img src="./images/fire.png" alt="fire" width="100" height="100" class="img"></button>
+                <br><br>
+                <p style="color:red;">Fire</p>
+            </div>
+            <div class="col">
+                <button id="water"><img src="./images/water.png" alt="water" width="100" height="100" class="img"></button>
+                <br><br>
+                <p style="color:skyblue;">Water</p>
+            </div>
+            <div class="col">
+                <button id="earth"><img src="./images/earth.png" alt="earth" width="100" height="100" class="img"></button>
+                <br><br>
+                <p style="color:#683802;">Earth</p>
+            </div>
+        </div>
+    </div>
+    <div class="result_page">
+        <p id="final_result">You Won, A Victory for Mankind.</p>
+        <button>Play Again</button>
+    </div>
+    <footer>
+        <p>Designed By Donny C</p>
+    </footer>
+</body>
+
+</html>
