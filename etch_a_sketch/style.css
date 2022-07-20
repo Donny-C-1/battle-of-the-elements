@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    min-height: 100vh;
+    font-family: "Arial Rounded MT", Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(135deg, deeppink, rebeccapurple);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+    padding-bottom: 3em;
+}
+
+.header {
+    font-size: 2em;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Main Body */
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px;
+}
+
+
+.control-box {
+    box-shadow:0 4px 10px 24px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 2em;
+}
+
+.control-box h2 {
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+.control {
+    background-color: rosybrown;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 10px;
+    display: inline-block;
+}
+.control input, .control button {
+    vertical-align: middle;
+    cursor:pointer;
+}
+
+.control-button {
+    border: 0;
+    background-color: rosybrown;
+    padding: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+    min-width: 12em;
+    display: inline-block;
+    transition: all .5s;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+}
+
+.control-button:hover {
+    background-color:chocolate;
+}
+
+.sketch-container {
+    flex: 100%;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.7);
+    padding: 10px;
+
+}
+
+.sketch-pad {
+    display: grid;
+    width: 100%;
+    margin: auto;
+    height: calc(100vw - 50px);
+    border: 5px solid red;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.pixel {
+    flex: 1;
+    border: .1px solid black;
+    transition: .35s;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: palevioletred;
+}
+
+
+@media screen and (min-width:1000px) {
+    .control-panel {
+        width: 300px;
+    }
+
+    .sketch-container {
+        flex: auto;
+        margin: 0 10%;
+    }
+
+    .sketch-pad {
+        height: calc(80vw - 350px);
+    }
+
+    .control-button {
+        display: block;
+        margin: 10px 0;
+    }
+}
